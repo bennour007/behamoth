@@ -1,21 +1,11 @@
-# Hello, world!
-#
-# This is an example function named 'hello'
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Install Package:           'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' Easy color set up for easier ggplot theming
+#' `bg_setter()` sets up background color and panel grid for easy theming in ggplot2
+#' @param color the desired color for the background, this color will be used for the panel, legend, and the plot.
+#' @param blanker a logical. If FLASE(default) it will keep usual plotting lines and text, if TRUE all those elements would be removed
+#' @return an object.
 
-# hello <- function() {
-#   print("Hello, world!")
-# }
+
+
 #' @export
 
 bg_setter <- function(color, blanker = F){
