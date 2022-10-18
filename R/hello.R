@@ -37,7 +37,6 @@ bg_setter <- function(color, blanker = F){
       axis.title = element_blank(),
       panel.grid = element_blank()
     )
-    return(themer)
   } else if(blanker == F){
     themer <- theme(
       panel.background = element_rect(
@@ -51,10 +50,9 @@ bg_setter <- function(color, blanker = F){
         color = color
       )
     )
-    return(themer)
   } else {
-    print("please choose the 'blanker' parameter to be T or F(default)")
+    themer <- "please choose the 'blanker' parameter to be T or F(default)"
   }
-
+  return(themer)
 }
 
