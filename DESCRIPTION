@@ -1,0 +1,12 @@
+Package: behamoth
+Type: Package
+Title: provide a helper function to use for setting up ggplot themes
+Version: 0.1.0
+Author: BENNOUR Mohamed Hsin
+Maintainer: BENNOUR Mohamed Hsin <hsin.bennour@gmail.com>
+Description: For elegant graphs sometimes you need to set up various components
+    in the gplot2 theme to a specific value, this package sets these components to the desired value for you once you specify the value you desire.   
+    Specifically this package targets the values of the background color and removing all grids and ticks if the user chooses to. 
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
