@@ -21,13 +21,17 @@ bg_setter <- function(color, blanker = F){
         fill = color,
         color = color
       ),
+      legend.key = element_rect(
+        fill = color
+      ),
       axis.line = element_blank(),
       axis.ticks = element_blank(),
       axis.text = element_blank(),
       axis.title = element_blank(),
       panel.grid = element_blank()
     )
-  } else if(blanker == F){
+  }
+  if(blanker == F){
     themer <- theme(
       panel.background = element_rect(
         fill = color
@@ -38,11 +42,11 @@ bg_setter <- function(color, blanker = F){
       plot.background = element_rect(
         fill = color,
         color = color
+      ),
+      legend.key = element_rect(
+        fill = color
       )
     )
-  } else {
-    themer <- "please choose the 'blanker' parameter to be T or F(default)"
   }
   return(themer)
 }
-
